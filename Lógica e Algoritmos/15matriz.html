@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // Matrizes
+        let contatos = [
+            ["Ralf",    33, "Blumenau"],
+            ["Isabela", 28, "Curitiba"],
+            ["Igor",    17, "Niterói"]
+        ];
+
+        // Laços
+        for(let linha=0; linha<contatos.length; linha++){
+            for(coluna=0; coluna<3; coluna++){
+                document.write(contatos[linha][coluna]+"<br>");
+            }
+            document.write("<hr>");
+        }
+
+        // Exibir document.write
+        //document.write(contatos[1][0]);
+
+        // Console.log
+        console.log(contatos);
+
+        // Console.table
+        console.table(contatos);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
