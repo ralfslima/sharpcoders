@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // Função para a tag de seleção
+        function linguagem(elemento){
+            switch(parseInt(elemento)){
+                case 1:
+                    alert('Linguagem de marcação');
+                break;
+
+                case 2:
+                    alert('Linguagem de estilos');
+                break;
+
+                case 3:
+                    alert('Linguagem de programação');
+                break;
+
+                default:
+                    alert('Escolha uma linguagem');
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    
+    <!-- Tag Select - Caixa de combinação -->
+    <select onchange="linguagem(this.value)">
+        <option value="0">Escolha uma linguagem</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+    </select>
+
+</body>
+</html>
