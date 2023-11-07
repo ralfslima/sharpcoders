@@ -82,3 +82,9 @@ footer p{
     text-align: center;
     color: #fff;
 }
+
+/* Informações sobre Cancún */
+.informacoesCancun h1{
+    margin: 30px;
+    font-size: 32px;
+}
