@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Timer</title>
+
+    <script>
+
+        // Executa uma função após alguns segundos
+        // setTimeout(function(){
+        //     alert('Utilizando o setTimeout');
+        // }, 3000);
+
+
+        // Ao carregar a página
+        window.onload = function(){
+            // Executa uma função a cada um segundo
+            setInterval(() => {
+                // Objeto Date
+                let tempo = new Date();
+
+                // Concatenar dados
+                let horaAtual = tempo.getHours() + ":";
+                horaAtual+= tempo.getMinutes()   + ":";
+                horaAtual+= tempo.getSeconds();
+
+                // Enviar a hora atual para o elemento <p>
+                document.getElementsByTagName('p')[0].innerText = horaAtual;
+            }, 1000);
+        }
+
+    </script>
+</head>
+<body>
+    <p></p>
+</body>
+</html>
