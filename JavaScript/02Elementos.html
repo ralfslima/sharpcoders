@@ -30,6 +30,20 @@
 
             let texto = document.createElement('p');
             texto.innerHTML = 'Hello World';
+
+            /* DIFERENÇA ENTRE APPEND E APPENDCHILD
+
+                AppendChild -> Aceita adicionar apenas elementos HTML (esses elementos podem conter textos, imagens, vídeos, etc...).
+                Append -> Aceita adicionar informações que não estejam entre tags HTML.
+
+                EXEMPLOS:
+                Funciona -> elemento.append('<h1>Hello World</h1>');
+                Funciona -> elemento.append('Hello World');
+                Funciona -> elemento.appendChild('<h1>Hello World</h1>');
+                Não Funciona -> elemento.appendChild('Hello World'); | (AppenChild só aceita se estiver utilizando uma tag HTML)
+
+                
+            */
         }
     </script>
 </head>
