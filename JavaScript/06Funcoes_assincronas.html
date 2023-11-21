@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções assíncronas</title>
+
+    <script>
+        // Promise((parametro1) => {})
+        // Promise((parametro1, parametro2) => {})
+        // Promise((parametro1, parametro2, parametro3) => {})
+
+        // Função mensagem1
+        function mensagem1(){
+            return new Promise((retorno) => {
+                setTimeout(() => {
+                    retorno('Primeira mensagem');
+                }, 1000);
+            });
+        }
+
+
+        // Função mensagem2
+        function mensagem2(){
+            return 'Segunda mensagem';
+        }
+
+        // Função para executar as mensagens
+        async function executarMensagens(){
+            // Obter o retorno das mensagens
+            let r1 = await mensagem1();
+            let r2 = mensagem2();
+
+            // Console
+            console.log(r1);
+            console.log(r2);
+        }
+
+        // Chamar função
+        executarMensagens();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

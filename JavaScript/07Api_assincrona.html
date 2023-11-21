@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - Assíncrona</title>
+
+    <script>
+
+        // Função para requisição
+        async function requisicao(){
+            for(let indice=1; indice<=151; indice++){
+
+                let requisicao = await fetch('https://pokeapi.co/api/v2/pokemon/'+indice);
+                let pokemon = await requisicao.json();
+                console.log(pokemon.name);
+
+            }
+        }
+
+        // Chamar a função de requisição
+        requisicao();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
