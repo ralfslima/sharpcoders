@@ -1,0 +1,7 @@
+<h1>{{ formulario.value | json }}</h1>
+
+<form [formGroup]="formulario" (submit)="enviar()">
+    <input type="email"    formControlName="email" placeholder="E-mail">
+    <input type="password" formControlName="senha" placeholder="Senha">
+    <input type="submit" value="Enviar">
+</form>
