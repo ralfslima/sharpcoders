@@ -8,6 +8,7 @@ export const autenticarGuard: CanActivateFn = (route, state) => {
   // Validação
   if(localStorage.getItem('email') == undefined){
     rota.navigateByUrl('/login');
+    return false; // Necessário este return para que o redirecionamento seja devidamente realizado
   }
 
   // Retorno
