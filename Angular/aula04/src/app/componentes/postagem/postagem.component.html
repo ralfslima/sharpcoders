@@ -1,0 +1,19 @@
+<table>
+    <thead>
+        <tr>
+            <th>Código do usuário</th>
+            <th>Código da postagem</th>
+            <th>Título</th>
+            <th>Postagem</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let p of postagens">
+            <td>{{ p.userId }}</td>
+            <td>{{ p.id }}</td>
+            <td>{{ p.title }}</td>
+            <td>{{ p.body }}</td>
+        </tr>
+    </tbody>
+</table>

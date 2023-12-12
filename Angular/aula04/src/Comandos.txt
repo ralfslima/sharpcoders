@@ -1,0 +1,7 @@
+CRIAÇÃO DO PROJETO: ng new aula04
+
+CRIAR UM COMPONENTE: ng g c componentes/postagem
+
+CRIAR UM SERVIÇO: ng g s servicos/postagem
+
+EXECUTAR PROJETO: ng s
