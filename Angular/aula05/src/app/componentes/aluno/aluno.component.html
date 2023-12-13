@@ -1,0 +1,17 @@
+<!-- Formulário -->
+<form [formGroup]="formulario">
+    <input type="text" formControlName="nome">
+    <input type="number" formControlName="nota1">
+    <input type="number" formControlName="nota2">
+    <input type="submit" value="Cadastrar" (click)="cadastrar()">
+</form>
+
+<!-- Tabela -->
+<table>
+    <tr *ngFor="let a of alunos">
+        <td>{{a.nome}}</td>
+        <td>{{a.nota1}}</td>
+        <td>{{a.nota2}}</td>
+        <td><button (click)="remover(a.id || 0)">Remover</button></td>
+    </tr>
+</table>
