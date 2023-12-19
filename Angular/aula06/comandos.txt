@@ -1,0 +1,14 @@
+1º Criar um novo projeto: ng new aula06
+
+2º Instalar o Bootstrap: npm i bootstrap
+
+3º Criar componentes
+    - ng g c componentes/principal
+    - ng g c componentes/formulario
+    - ng g c componentes/tabela
+
+4º Adicionar o Bootstrap: node_modules/bootstrap/dist/css/bootstrap.min.css
+
+5º Executar: ng s
+
+6º Criar pipe: ng g p pipes/media

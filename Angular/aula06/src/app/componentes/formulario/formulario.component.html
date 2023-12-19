@@ -1,0 +1,19 @@
+<!-- <p>{{ formulario.value | json}}</p> -->
+
+<form [formGroup]="formulario" (submit)="cadastrar()">
+    <input type="text"   placeholder="Nome"    formControlName="nome"  class="form-control">
+    <input type="number" placeholder="1ª nota" formControlName="nota1" class="form-control">
+    <input type="number" placeholder="2ª nota" formControlName="nota2" class="form-control">
+    <input type="submit" value="Cadastrar" class="btn btn-primary">
+</form>
+
+<!-- 
+form{
+    width: 500px;
+    margin: 30px auto;
+}
+
+input{
+    margin-bottom: 10px;
+}
+-->
