@@ -38,10 +38,6 @@ app.post('/', function(req, res){
 
 });
 
-app.get('/teste', function(req, res){
-    res.write('teste');
-})
-
 app.get('/', function(req, res){
     // Obter token via Bearer
     const bearer = req.headers['authorization'];
